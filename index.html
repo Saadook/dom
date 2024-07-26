@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1 id="myDiv">Hello</h1>
+    <h1 class="myClass">helooooo</h1>
+    <p id="parag">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias rerum ex illum asperiores facere aspernatur excepturi, similique soluta. Voluptatibus, repudiandae!</p>
+    <div class="container"></div>
+    <ul id="ul"></ul>
+
+
+
+
+    <script>
+        var acc =document.getElementById("myDiv");
+        console.log(acc);
+        acc.style.color="blue"
+       
+        var ele =document.getElementsByClassName("myClass");
+        console.log(ele[0]);
+        ele[0].style.backgroundColor="red"
+        document.getElementById("parag").textContent ="hello my freind";
+        document.getElementsByClassName("container")[0].innerHTML="<p> lorem </p>"
+        var li = document.createElement("li")
+        li.textContent="this is li";
+         document.getElementById("ul").appendChild(li);
+        
+    </script>
+</body>
+</html>
